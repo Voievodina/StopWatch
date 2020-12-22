@@ -1,0 +1,8 @@
+<p>
+  {{time|format}}
+</p>
+<button *ngIf="!isRunning" (click)="start()">Start</button>
+<button *ngIf="isRunning" (click)="stop()">Stop</button>
+<button (click)="wait()" id="pause">Wait</button>
+<button (click)="reset()">Reset</button> 
+
